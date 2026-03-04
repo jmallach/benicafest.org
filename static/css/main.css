@@ -72,7 +72,9 @@ nav ul a:focus { opacity: 1; }
 .hero {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 18vw 18vw auto 18vw 14vw;
+  grid-template-rows: 1fr 1fr auto 1fr 0.75fr;
+  height: 100svh;
+  min-height: 520px;
   overflow: hidden;
   position: relative;
 }
@@ -123,13 +125,13 @@ nav ul a:focus { opacity: 1; }
 }
 .date-block .day {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(3rem, 9vw, 8rem);
+  font-size: clamp(2rem, min(8vw, 11vh), 8rem);
   color: var(--white);
   line-height: 1;
 }
 .date-block .sub {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(0.85rem, 2vw, 1.9rem);
+  font-size: clamp(0.7rem, min(1.8vw, 2.5vh), 1.9rem);
   color: var(--white);
   letter-spacing: 0.15em;
 }
@@ -151,12 +153,12 @@ nav ul a:focus { opacity: 1; }
 }
 .edition-block .ed-num {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(2rem, 4.5vw, 4.5rem);
+  font-size: clamp(1.5rem, min(4vw, 6vh), 4.5rem);
   color: var(--white);
 }
 
 /* Icon blocks */
-.icon-block { font-size: clamp(1.5rem, 4vw, 3.5rem); }
+.icon-block { font-size: clamp(1.2rem, min(3.5vw, 5vh), 3rem); }
 
 /* Title row */
 .title-block {
@@ -166,12 +168,12 @@ nav ul a:focus { opacity: 1; }
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2vw 0;
+  padding: 1.5vh 0;
   animation: fadeUp 0.7s 0.28s ease both;
 }
 .festival-name {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(4rem, 16vw, 13rem);
+  font-size: clamp(2.5rem, min(14vw, 18vh), 13rem);
   letter-spacing: 0.04em;
   line-height: 1;
   color: var(--white);
@@ -180,8 +182,8 @@ nav ul a:focus { opacity: 1; }
 }
 .mountain-a {
   display: inline-block;
-  width: clamp(3.2rem, 12.5vw, 10.5rem);
-  height: clamp(3.6rem, 14vw, 11.5rem);
+  width: clamp(2rem, min(11vw, 14vh), 10.5rem);
+  height: clamp(2.2rem, min(12.5vw, 16vh), 11.5rem);
   position: relative;
   top: 0.04em;
 }
