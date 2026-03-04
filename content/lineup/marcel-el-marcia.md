@@ -3,7 +3,6 @@ title: "Marcel el Marcià"
 genre: "Cançó en valencià · Familiar"
 time: "20:00"
 order: 1
-familyFriendly: true
 website: ""
 instagram: ""
 ---

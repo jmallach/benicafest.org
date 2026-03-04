@@ -3,7 +3,6 @@ title: "Fardatxo"
 genre: "Rock · En valencià"
 time: "TBC"
 order: 2
-familyFriendly: false
 website: ""
 instagram: ""
 ---

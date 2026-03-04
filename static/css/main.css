@@ -301,16 +301,6 @@ nav ul a:focus { opacity: 1; }
 }
 .artist-card .bio p { margin-bottom: 0.5em; }
 
-.tag-kids {
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.22);
-  font-size: 0.65rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  padding: 0.2rem 0.5rem;
-  margin-top: 0.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-}
 
 .artist-links {
   margin-top: 0.8rem;

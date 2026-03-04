@@ -53,9 +53,6 @@
       <div class="time">{{ .Params.time }}</div>
       <h2 class="name">{{ .Title }}</h2>
       <div class="genre">{{ .Params.genre }}</div>
-      {{ if .Params.familyFriendly }}
-        <span class="tag-kids">🪐 Música familiar</span>
-      {{ end }}
       <div class="bio">{{ .Content }}</div>
       {{ if or .Params.website .Params.instagram }}
       <div class="artist-links">
@@ -82,7 +79,7 @@
     {{ range sort $artists ".Params.order" }}
     <div class="s-row">
       <span class="s-time">{{ .Params.time }}</span>
-      <span class="s-name">{{ .Title }}{{ if .Params.familyFriendly }} <span class="s-note">— música familiar</span>{{ end }}</span>
+      <span class="s-name">{{ .Title }}</span>
     </div>
     {{ end }}
   </div>

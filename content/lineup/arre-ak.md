@@ -3,7 +3,6 @@ title: "Arre A.K."
 genre: "Rock · Pop · En valencià"
 time: "TBC"
 order: 5
-familyFriendly: false
 website: ""
 instagram: ""
 ---

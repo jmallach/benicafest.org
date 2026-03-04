@@ -3,7 +3,6 @@ title: "Invers"
 genre: "Rock-metal alternatiu · En valencià"
 time: "TBC"
 order: 4
-familyFriendly: false
 website: ""
 instagram: ""
 ---
