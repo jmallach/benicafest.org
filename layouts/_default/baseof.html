@@ -1,28 +1,23 @@
 <!DOCTYPE html>
-<html lang="ca-es">
+<html lang="ca">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Title }} | Benicafest</title>
-    {{ $style := resources.Get "css/style.css" }}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ if .IsHome }}{{ .Site.Params.festivalName }} — {{ .Site.Params.date }}{{ else }}{{ .Title }} · {{ .Site.Params.festivalName }}{{ end }}</title>
+  <meta name="description" content="{{ .Site.Params.description }}">
+  <meta property="og:title" content="{{ .Site.Params.festivalName }}">
+  <meta property="og:description" content="{{ .Site.Params.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
 </head>
 <body>
-    <header>
-        <div class="logo-benica"></div>
-        <h1>BENICAFEST</h1>
-        <p style="color: white; font-weight: bold; background: #000; display: inline-block; padding: 2px 10px; position: relative; z-index: 2;">13 JUNY 2026 | GAIANES</p>
-    </header>
-    <nav>
-        <a href="/#inici">Inici</a>
-        <a href="/#grups">Cartell</a>
-        <a href="/#galeria">Galeria</a>
-        <a href="/#quisom">L'Associació</a>
-        <a href="/#contacte">Contacte</a>
-    </nav>
-    <main>{{ block "main" . }}{{ end }}</main>
-    <footer>
-        <p>Benicafest 2026 | Gaianes (El Comtat)</p>
-    </footer>
+  {{ partial "nav.html" . }}
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+  <script src="{{ "js/main.js" | relURL }}"></script>
 </body>
 </html>

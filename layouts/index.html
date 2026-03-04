@@ -1,48 +1,126 @@
 {{ define "main" }}
-  <section id="inici" class="box">
-    <h2>Música i territori</h2>
-    <p>El <strong>Benicafest</strong> neix de la unió entre el cim del Benicadell i la passió per la música en la nostra llengua. Una jornada per gaudir de la cultura en un entorn privilegiat.</p>
-    <p>📍 <strong>Ubicació:</strong> Pista esportiva de Gaianes.<br>
-       🕗 <strong>Horari:</strong> Portes a les 20:00h.<br>
-       🍴 <strong>Gastronomia:</strong> Servei de barra i food trucks. Bars locals col·laboradors per a sopar al poble.</p>
-  </section>
 
-  <section id="grups">
-    <h2 style="text-align: center; text-transform: uppercase;">El Cartell</h2>
-    <div class="grid-colors">
-      {{ range (where .Site.RegularPages "Section" "grups") }}
-        <div class="card">
-          <h3>{{ .Title }}</h3>
-          <p><strong>{{ .Params.origin }}</strong></p>
-          <div>{{ .Content | safeHTML }}</div>
-        </div>
+<!-- ═══ HERO MOSAIC ═══ -->
+<div class="hero">
+
+  <div class="block date-block">
+    <div class="day">13</div>
+    <div class="sub">Juny 2026 · Gaianes</div>
+  </div>
+  <div class="block edition-block">
+    <div class="ed-label">{{ .Site.Params.edition }} Edició</div>
+    <div class="ed-num">Benicafest</div>
+  </div>
+
+  <div class="block c-orange icon-block" aria-hidden="true">🎸</div>
+  <div class="block c-red    icon-block" aria-hidden="true">🎤</div>
+  <div class="block c-pink   icon-block" aria-hidden="true">🤘</div>
+  <div class="block c-purple icon-block" aria-hidden="true">⚡</div>
+
+  <div class="block title-block">
+    <span class="festival-name">
+      BENIC{{ partial "mountain-a.html" . }}FEST
+    </span>
+  </div>
+
+  <div class="block c-olive   row4 icon-block" aria-hidden="true">🎹</div>
+  <div class="block c-lav     row4 icon-block" aria-hidden="true">🎵</div>
+  <div class="block c-pink-lt row4 icon-block" aria-hidden="true">🍹</div>
+  <div class="block c-purple  row4 icon-block" aria-hidden="true">🌿</div>
+
+  <div class="bottom-strip">
+    <div class="block c-navy     icon-block" aria-hidden="true">🥁</div>
+    <div class="block c-olive    icon-block" aria-hidden="true">🎺</div>
+    <div class="block c-red      icon-block" aria-hidden="true">🎻</div>
+    <div class="block c-olive-dk icon-block" aria-hidden="true">🎙️</div>
+  </div>
+
+  <div class="scroll-cue" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round">
+      <polyline points="6 9 12 15 18 9"/>
+    </svg>
+    Desplaça't
+  </div>
+</div>
+
+<!-- ═══ LINEUP ═══ -->
+<section class="section" id="lineup">
+  <span class="section-label">Lineup</span>
+  <div class="lineup-grid">
+    {{ $artists := where .Site.RegularPages "Section" "lineup" }}
+    {{ range sort $artists ".Params.order" }}
+    <article class="artist-card">
+      <div class="time">{{ .Params.time }}</div>
+      <h2 class="name">{{ .Title }}</h2>
+      <div class="genre">{{ .Params.genre }}</div>
+      {{ if .Params.familyFriendly }}
+        <span class="tag-kids">🪐 Música familiar</span>
       {{ end }}
-    </div>
-  </section>
+      <div class="bio">{{ .Content }}</div>
+      {{ if or .Params.website .Params.instagram }}
+      <div class="artist-links">
+        {{ if .Params.website }}<a href="{{ .Params.website }}" target="_blank" rel="noopener">Web</a>{{ end }}
+        {{ if .Params.instagram }}<a href="{{ .Params.instagram }}" target="_blank" rel="noopener">Instagram</a>{{ end }}
+      </div>
+      {{ end }}
+    </article>
+    {{ end }}
+  </div>
+  <p class="disclaimer">* Ordre i horaris definitius pròximament</p>
+</section>
 
-  <section id="galeria" class="box">
-    <h2>Galeria</h2>
-    <p>Imatges de Gaianes i del Benicafest.</p>
-    <div class="galeria-grid">
-      <div class="foto-placeholder">Foto 1</div>
-      <div class="foto-placeholder">Foto 2</div>
-      <div class="foto-placeholder">Foto 3</div>
-      <div class="foto-placeholder">Foto 4</div>
+<!-- ═══ HORARI ═══ -->
+<div class="section-alt">
+<section class="section" id="horari">
+  <span class="section-label">Horari</span>
+  <div class="schedule">
+    <div class="s-row s-doors">
+      <span class="s-time">{{ .Site.Params.doors }}</span>
+      <span class="s-name">Obertura de portes</span>
     </div>
-  </section>
-
-  <section id="quisom" class="box">
-    <h2>Qui som</h2>
-    <p>Som una associació sense ànim de lucre formada per veïns i amics de Gaianes. Treballem per dinamitzar la vida cultural del poble i donar veu als grups que s'expressen en valencià.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </section>
-
-  <section id="contacte" class="box">
-    <h2>Contacte</h2>
-    <p>📧 <a href="mailto:hola@benicafest.org" style="color:var(--taronja)">hola@benicafest.org</a></p>
-    <div class="social-links">
-        <a href="https://instagram.com/benicafest">Instagram</a>
-        <a href="https://bsky.app/profile/benicafest.org">Bluesky</a>
+    {{ $artists := where .Site.RegularPages "Section" "lineup" }}
+    {{ range sort $artists ".Params.order" }}
+    <div class="s-row">
+      <span class="s-time">{{ .Params.time }}</span>
+      <span class="s-name">{{ .Title }}{{ if .Params.familyFriendly }} <span class="s-note">— música familiar</span>{{ end }}</span>
     </div>
-  </section>
+    {{ end }}
+  </div>
+  <p class="disclaimer">* Horaris definitius pròximament</p>
+</section>
+</div>
+
+<!-- ═══ FREE ENTRY ═══ -->
+<div class="free-band">
+  <h2>Entrada totalment gratuïta 🎉</h2>
+  <p>El Benicafest és per a tothom. Vine i gaudeix!</p>
+</div>
+
+<!-- ═══ INFO ═══ -->
+<section class="section" id="info">
+  <span class="section-label">Informació</span>
+  <div class="info-grid">
+    <div class="info-card">
+      <div class="info-icon">📍</div>
+      <h3>Ubicació</h3>
+      <p>{{ .Site.Params.location }}</p>
+    </div>
+    <div class="info-card">
+      <div class="info-icon">📅</div>
+      <h3>Data i hora</h3>
+      <p>Dissabte, {{ .Site.Params.date }}<br>Portes: {{ .Site.Params.doors }}h · Inici: {{ .Site.Params.concertStart }}h</p>
+    </div>
+    <div class="info-card">
+      <div class="info-icon">🍔</div>
+      <h3>Menjar i beure</h3>
+      <p>Food trucks, barra de bar i els bars locals del poble, oberts durant tot l'esdeveniment.</p>
+    </div>
+    <div class="info-card">
+      <div class="info-icon">🏘️</div>
+      <h3>Organitzat per</h3>
+      <p>{{ .Site.Params.organiser }}</p>
+    </div>
+  </div>
+</section>
+
 {{ end }}

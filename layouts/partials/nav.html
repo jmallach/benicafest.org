@@ -1,0 +1,11 @@
+<nav id="navbar" role="navigation" aria-label="Navegació principal">
+  <a href="{{ "/" | relURL }}" class="nav-logo">
+    {{ partial "mountain-a-small.html" . }}
+    {{ .Site.Params.festivalName | upper }}
+  </a>
+  <ul>
+    <li><a href="#lineup">Lineup</a></li>
+    <li><a href="#horari">Horari</a></li>
+    <li><a href="#info">Info</a></li>
+  </ul>
+</nav>

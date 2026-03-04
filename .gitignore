@@ -1,0 +1,14 @@
+# Hugo build output — never commit this
+/public/
+/resources/
+
+# Hugo temp files
+.hugo_build.lock
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
