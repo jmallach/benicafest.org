@@ -431,3 +431,20 @@ footer {
 @media (max-width: 400px) {
   .lineup-grid { grid-template-columns: 1fr; }
 }
+
+/* ── POSTER ── */
+.poster-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: var(--off-white);
+}
+.poster-img {
+  width: 100%;
+  max-width: 480px;
+  box-shadow:
+    0 4px 12px rgba(0,0,0,0.15),
+    0 20px 60px rgba(0,0,0,0.2);
+  display: block;
+}
