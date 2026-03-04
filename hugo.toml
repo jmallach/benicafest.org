@@ -1,7 +1,6 @@
-baseURL = "https://benicafest.github.io/"   # ← change to your domain or GitHub Pages URL
+baseURL = "https://benicafest.org/"
 languageCode = "ca"
 title = "Benicafest"
-theme = ""          # no external theme — fully custom
 
 [params]
   festivalName    = "Benicafest"
