@@ -1,0 +1,48 @@
+{{ define "main" }}
+  <section id="inici" class="box">
+    <h2>Música i territori</h2>
+    <p>El <strong>Benicafest</strong> neix de la unió entre el cim del Benicadell i la passió per la música en la nostra llengua. Una jornada per gaudir de la cultura en un entorn privilegiat.</p>
+    <p>📍 <strong>Ubicació:</strong> Pista esportiva de Gaianes.<br>
+       🕗 <strong>Horari:</strong> Portes a les 20:00h.<br>
+       🍴 <strong>Gastronomia:</strong> Servei de barra i food trucks. Bars locals col·laboradors per a sopar al poble.</p>
+  </section>
+
+  <section id="grups">
+    <h2 style="text-align: center; text-transform: uppercase;">El Cartell</h2>
+    <div class="grid-colors">
+      {{ range (where .Site.RegularPages "Section" "grups") }}
+        <div class="card">
+          <h3>{{ .Title }}</h3>
+          <p><strong>{{ .Params.origin }}</strong></p>
+          <div>{{ .Content | safeHTML }}</div>
+        </div>
+      {{ end }}
+    </div>
+  </section>
+
+  <section id="galeria" class="box">
+    <h2>Galeria</h2>
+    <p>Imatges de Gaianes i del Benicafest.</p>
+    <div class="galeria-grid">
+      <div class="foto-placeholder">Foto 1</div>
+      <div class="foto-placeholder">Foto 2</div>
+      <div class="foto-placeholder">Foto 3</div>
+      <div class="foto-placeholder">Foto 4</div>
+    </div>
+  </section>
+
+  <section id="quisom" class="box">
+    <h2>Qui som</h2>
+    <p>Som una associació sense ànim de lucre formada per veïns i amics de Gaianes. Treballem per dinamitzar la vida cultural del poble i donar veu als grups que s'expressen en valencià.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </section>
+
+  <section id="contacte" class="box">
+    <h2>Contacte</h2>
+    <p>📧 <a href="mailto:hola@benicafest.org" style="color:var(--taronja)">hola@benicafest.org</a></p>
+    <div class="social-links">
+        <a href="https://instagram.com/benicafest">Instagram</a>
+        <a href="https://bsky.app/profile/benicafest.org">Bluesky</a>
+    </div>
+  </section>
+{{ end }}

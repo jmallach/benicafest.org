@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Benicafest 2026</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Benicafest 2026</description>
+    <generator>Hugo</generator>
+    <language>ca-es</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arre A.K.</title>
+      <link>http://localhost:1313/grups/arre/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/grups/arre/</guid>
+      <description>&lt;p&gt;Punk-rock combatiu i autogestionat.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fardatxo</title>
+      <link>http://localhost:1313/grups/fardatxo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/grups/fardatxo/</guid>
+      <description>&lt;p&gt;Ska-punk festiu per fer saltar a tota la pista.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Invers</title>
+      <link>http://localhost:1313/grups/invers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/grups/invers/</guid>
+      <description>&lt;p&gt;Rock-electrònic potent amb veus femenines.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Marcel el Marcià</title>
+      <link>http://localhost:1313/grups/marcel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/grups/marcel/</guid>
+      <description>&lt;p&gt;Música familiar que recupera la tradició oral valenciana.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Sgraciats</title>
+      <link>http://localhost:1313/grups/sgraciats/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/grups/sgraciats/</guid>
+      <description>&lt;p&gt;Versions i gresca de proximitat.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
