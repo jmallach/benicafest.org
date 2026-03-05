@@ -1,7 +1,7 @@
 <nav id="navbar" role="navigation" aria-label="Navegació principal">
-  <a href="{{ "/" | relURL }}" class="nav-logo">
-    {{ partial "mountain-a-small.html" . }}
-    {{ .Site.Params.festivalName | upper }}
+  <a href="/" class="nav-logo">
+    {% include "partials/mountain_a_small.html" %}
+    {{ site.festivalName | upper }}
   </a>
   <ul>
     <li><a href="#lineup">Lineup</a></li>
