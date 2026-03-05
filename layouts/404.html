@@ -6,12 +6,23 @@
   <title>404 — Pàgina no trobada · Benicafest</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@0,400;0,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
   <link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}">
+  <meta name="robots" content="noindex">
 </head>
 <body>
-  {{ partial "nav.html" . }}
+  <nav class="nav" style="opacity:1;transform:none;">
+    <a class="nav-logo" href="{{ "/" | relURL }}">
+      <svg viewBox="0 0 100 110" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:28px;height:32px;">
+        <polygon points="49,5 15,101 83,101" fill="white"/>
+        <polygon points="49,14 45,24 71,96 78,96" fill="#3d2535"/>
+        <polygon points="72,33 38,101 100,101" fill="white"/>
+        <polygon points="72,40 68,49 88,98 95,98" fill="#3d2535"/>
+      </svg>
+      Benicafest
+    </a>
+  </nav>
   <main>
     <div class="error-page">
       <div class="error-mountain">
@@ -27,6 +38,5 @@
       <a href="{{ "/" | relURL }}" class="error-back">Torna a l'inici</a>
     </div>
   </main>
-  {{ partial "footer.html" . }}
 </body>
 </html>

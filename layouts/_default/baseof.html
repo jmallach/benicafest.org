@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Primary meta -->
-  <title>{{ if .IsHome }}{{ .Site.Params.festivalName }} — Festival de música en valencià a Gaianes{{ else }}{{ .Title }} · {{ .Site.Params.festivalName }}{{ end }}</title>
+  <title>{{ if .IsHome }}{{ .Site.Params.festivalName }} · 13 de juny 2026 · Gaianes (el Comtat){{ else }}{{ .Title }} · {{ .Site.Params.festivalName }}{{ end }}</title>
   <meta name="description" content="{{ .Site.Params.descriptionLong }}">
   <meta name="author" content="{{ .Site.Params.organiser }}">
   <link rel="canonical" href="{{ .Permalink }}">
@@ -14,7 +14,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="{{ .Site.Params.festivalName }}">
   <meta property="og:url" content="{{ .Permalink }}">
-  <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Params.festivalName }} — Festival de música en valencià a Gaianes, el Comtat{{ else }}{{ .Title }} · {{ .Site.Params.festivalName }}{{ end }}">
+  <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Params.festivalName }} · 13 de juny 2026 · Gaianes (el Comtat){{ else }}{{ .Title }} · {{ .Site.Params.festivalName }}{{ end }}">
   <meta property="og:description" content="{{ .Site.Params.descriptionLong }}">
   <meta property="og:image" content="{{ "img/og-image.jpg" | absURL }}">
   <meta property="og:image:width" content="1200">
@@ -24,7 +24,7 @@
 
   <!-- Twitter / X card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Params.festivalName }} — Festival de música en valencià a Gaianes, el Comtat{{ else }}{{ .Title }} · {{ .Site.Params.festivalName }}{{ end }}">
+  <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Params.festivalName }} · 13 de juny 2026 · Gaianes (el Comtat){{ else }}{{ .Title }} · {{ .Site.Params.festivalName }}{{ end }}">
   <meta name="twitter:description" content="{{ .Site.Params.descriptionLong }}">
   <meta name="twitter:image" content="{{ "img/og-image.jpg" | absURL }}">
 
