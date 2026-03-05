@@ -1,4 +1,5 @@
-{{ define "main" }}
+{% extends "base.html" %}
+{% block main %}
 
 <!-- ═══ HERO MOSAIC ═══ -->
 <div class="hero">
@@ -8,7 +9,7 @@
     <div class="sub">Juny 2026 · Gaianes</div>
   </div>
   <div class="block edition-block">
-    <div class="ed-label">{{ .Site.Params.edition }} Edició</div>
+    <div class="ed-label">{{ site.edition }} Edició</div>
     <div class="ed-num">Benicafest</div>
   </div>
 
@@ -19,7 +20,7 @@
 
   <div class="block title-block">
     <span class="festival-name">
-      BENIC{{ partial "mountain-a.html" . }}FEST
+      BENIC{% include "partials/mountain_a.html" %}FEST
     </span>
   </div>
 
@@ -47,7 +48,7 @@
 <!-- ═══ POSTER ═══ -->
 <div class="poster-section">
   <img
-    src="{{ "img/poster-2026.png" | relURL }}"
+    src="/img/poster-2026.png"
     alt="Cartell oficial del Benicafest 2026"
     class="poster-img"
   >
@@ -57,28 +58,27 @@
 <section class="section" id="lineup">
   <span class="section-label">Lineup</span>
   <div class="lineup-grid">
-    {{ $artists := where .Site.RegularPages "Section" "lineup" }}
-    {{ range sort $artists ".Params.order" }}
-    <article class="artist-card{{ if .Params.special }} artist-card--special{{ end }}">
-      {{ if .Params.avatar }}
+    {% for artist in artists %}
+    <article class="artist-card{% if artist.special %} artist-card--special{% endif %}">
+      {% if artist.avatar %}
       <div class="artist-avatar">
-        <img src="{{ .Params.avatar | relURL }}" alt="{{ .Title }}" loading="lazy">
+        <img src="/{{ artist.avatar }}" alt="{{ artist.title }}" loading="lazy">
       </div>
-      {{ end }}
-      <div class="time">{{ .Params.time }}</div>
-      <h2 class="name">{{ .Title }}</h2>
-      {{ if .Params.special }}
-      <div class="special-label">{{ .Params.specialLabel | default "Espectacle especial" }}</div>
-      {{ end }}
-      <div class="genre">{{ .Params.genre }}</div>
-      <div class="bio">{{ .Content }}</div>
-      {{ if or .Params.website .Params.instagram .Params.bluesky .Params.mastodon .Params.x .Params.tiktok .Params.facebook }}
+      {% endif %}
+      <div class="time">{{ artist.time }}</div>
+      <h2 class="name">{{ artist.title }}</h2>
+      {% if artist.special %}
+      <div class="special-label">{{ artist.specialLabel or "Espectacle especial" }}</div>
+      {% endif %}
+      <div class="genre">{{ artist.genre }}</div>
+      <div class="bio">{{ artist.content }}</div>
+      {% if artist.website or artist.instagram or artist.bluesky or artist.mastodon or artist.x or artist.tiktok or artist.facebook or artist.bandcamp %}
       <div class="artist-links">
-        {{ partial "social-links.html" . }}
+        {% include "partials/social_links.html" %}
       </div>
-      {{ end }}
+      {% endif %}
     </article>
-    {{ end }}
+    {% endfor %}
   </div>
   <p class="disclaimer">* Ordre i horaris definitius pròximament</p>
 </section>
@@ -89,16 +89,15 @@
   <span class="section-label">Horari</span>
   <div class="schedule">
     <div class="s-row s-doors">
-      <span class="s-time">{{ .Site.Params.doors }}</span>
+      <span class="s-time">{{ site.doors }}</span>
       <span class="s-name">Obertura de portes</span>
     </div>
-    {{ $artists := where .Site.RegularPages "Section" "lineup" }}
-    {{ range sort $artists ".Params.order" }}
+    {% for artist in artists %}
     <div class="s-row">
-      <span class="s-time">{{ .Params.time }}</span>
-      <span class="s-name">{{ .Title }}</span>
+      <span class="s-time">{{ artist.time }}</span>
+      <span class="s-name">{{ artist.title }}</span>
     </div>
-    {{ end }}
+    {% endfor %}
   </div>
   <p class="disclaimer">* Horaris definitius pròximament</p>
 </section>
@@ -117,12 +116,12 @@
     <div class="info-card">
       <div class="info-icon">📍</div>
       <h3>Ubicació</h3>
-      <p>{{ .Site.Params.location }}</p>
+      <p>{{ site.location }}</p>
     </div>
     <div class="info-card">
       <div class="info-icon">📅</div>
       <h3>Data i hora</h3>
-      <p>Dissabte, {{ .Site.Params.date }}<br>Portes: {{ .Site.Params.doors }}h · Inici: {{ .Site.Params.concertStart }}h</p>
+      <p>Dissabte, {{ site.date }}<br>Portes: {{ site.doors }}h · Inici: {{ site.concertStart }}h</p>
     </div>
     <div class="info-card">
       <div class="info-icon">🍔</div>
@@ -132,9 +131,9 @@
     <div class="info-card">
       <div class="info-icon">🏘️</div>
       <h3>Organitzat per</h3>
-      <p>{{ .Site.Params.organiser }}</p>
+      <p>{{ site.organiser }}</p>
     </div>
   </div>
 </section>
 
-{{ end }}
+{% endblock %}
