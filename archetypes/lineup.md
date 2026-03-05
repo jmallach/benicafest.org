@@ -13,6 +13,7 @@ bluesky: ""
 mastodon: ""
 x: ""
 tiktok: ""
+bandcamp: ""
 ---
 
 Bio de la banda aquí. Escriu en Markdown.

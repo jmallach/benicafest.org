@@ -10,6 +10,7 @@ x: "https://x.com/inversgrup"
 bluesky: ""
 mastodon: ""
 tiktok: ""
+bandcamp: "https://inversgrup.bandcamp.com"
 facebook: ""
 ---
 

@@ -10,6 +10,7 @@ x: ""
 bluesky: ""
 mastodon: ""
 tiktok: ""
+bandcamp: "https://arreak.bandcamp.com"
 facebook: ""
 ---
 

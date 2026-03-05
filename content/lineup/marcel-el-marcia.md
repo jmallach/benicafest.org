@@ -10,6 +10,7 @@ x: "https://x.com/marcelelmarcia"
 bluesky: ""
 mastodon: ""
 tiktok: ""
+bandcamp: "https://marcelelmarcia.bandcamp.com"
 facebook: "https://www.facebook.com/marcelmarcianet.iocla"
 ---
 
