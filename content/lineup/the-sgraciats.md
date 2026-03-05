@@ -3,6 +3,7 @@ title: "The Sgraciats"
 genre: "Rock · Indie"
 time: "TBC"
 order: 4
+avatar: "img/avatars/the-sgraciats.jpg"
 website: ""
 instagram: "https://www.instagram.com/the_sgraciats/"
 x: ""

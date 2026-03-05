@@ -5,6 +5,7 @@ time: "TBC"
 order: 99
 special: false
 specialLabel: ""
+avatar: ""
 website: ""
 instagram: ""
 facebook: ""

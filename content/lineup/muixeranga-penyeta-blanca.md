@@ -5,6 +5,7 @@ time: "TBC"
 order: 15
 special: true
 specialLabel: "Espectacle especial"
+avatar: "img/avatars/muixeranga-penyeta-blanca.jpg"
 website: ""
 instagram: "https://www.instagram.com/muixerangapenyetablanca/"
 x: "https://x.com/PenyetaBlanca"

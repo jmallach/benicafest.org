@@ -63,6 +63,11 @@
       {{ if .Params.special }}
       <div class="special-label">{{ .Params.specialLabel | default "Espectacle especial" }}</div>
       {{ end }}
+      {{ if .Params.avatar }}
+      <div class="artist-avatar">
+        <img src="{{ .Params.avatar | relURL }}" alt="{{ .Title }}" loading="lazy">
+      </div>
+      {{ end }}
       <div class="time">{{ .Params.time }}</div>
       <h2 class="name">{{ .Title }}</h2>
       <div class="genre">{{ .Params.genre }}</div>
