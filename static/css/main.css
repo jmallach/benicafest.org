@@ -474,3 +474,51 @@ footer {
     0 20px 60px rgba(0,0,0,0.2);
   display: block;
 }
+
+/* ── SPECIAL ACT CARD ── */
+.artist-card--special {
+  background:
+    repeating-linear-gradient(
+      -45deg,
+      #000 0px,
+      #000 18px,
+      #fff 18px,
+      #fff 52px
+    ) !important;
+  color: #000 !important;
+  border-top: 4px solid #000;
+  position: relative;
+}
+/* Tinted overlay so text stays readable over the stripes */
+.artist-card--special::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.55);
+  pointer-events: none;
+}
+/* Ensure content sits above the overlay */
+.artist-card--special > * {
+  position: relative;
+  z-index: 1;
+}
+.special-label {
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.8;
+  border: 1.5px solid rgba(0,0,0,0.5);
+  display: inline-block;
+  padding: 0.15rem 0.4rem;
+  margin-bottom: 0.5rem;
+  background: rgba(255,255,255,0.6);
+}
+
+/* Social links on the striped special card */
+.artist-card--special .social-link {
+  color: #000;
+  opacity: 0.7;
+}
+.artist-card--special .social-link:hover {
+  opacity: 1;
+}

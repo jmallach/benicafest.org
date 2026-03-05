@@ -2,9 +2,12 @@
 title: "Nom de la banda"
 genre: "Rock · En valencià"
 time: "TBC"
-order: 99          # lower = earlier in the lineup
+order: 99
+special: false
+specialLabel: ""
 website: ""
 instagram: ""
+facebook: ""
 bluesky: ""
 mastodon: ""
 x: ""
