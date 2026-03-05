@@ -64,10 +64,9 @@
       <h2 class="name">{{ .Title }}</h2>
       <div class="genre">{{ .Params.genre }}</div>
       <div class="bio">{{ .Content }}</div>
-      {{ if or .Params.website .Params.instagram }}
+      {{ if or .Params.website .Params.instagram .Params.bluesky .Params.mastodon .Params.x .Params.tiktok }}
       <div class="artist-links">
-        {{ if .Params.website }}<a href="{{ .Params.website }}" target="_blank" rel="noopener">Web</a>{{ end }}
-        {{ if .Params.instagram }}<a href="{{ .Params.instagram }}" target="_blank" rel="noopener">Instagram</a>{{ end }}
+        {{ partial "social-links.html" . }}
       </div>
       {{ end }}
     </article>
