@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Primary meta -->
-  <title>{{ if .IsHome }}{{ .Site.Params.festivalName }} — {{ .Site.Params.date }}{{ else }}{{ .Title }} · {{ .Site.Params.festivalName }}{{ end }}</title>
-  <meta name="description" content="{{ .Site.Params.description }}">
+  <title>{{ if .IsHome }}{{ .Site.Params.festivalName }} — Festival de música en valencià a Gaianes{{ else }}{{ .Title }} · {{ .Site.Params.festivalName }}{{ end }}</title>
+  <meta name="description" content="{{ .Site.Params.descriptionLong }}">
   <meta name="author" content="{{ .Site.Params.organiser }}">
   <link rel="canonical" href="{{ .Permalink }}">
 
@@ -14,17 +14,19 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="{{ .Site.Params.festivalName }}">
   <meta property="og:url" content="{{ .Permalink }}">
-  <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Params.festivalName }} — {{ .Site.Params.date }}{{ else }}{{ .Title }} · {{ .Site.Params.festivalName }}{{ end }}">
-  <meta property="og:description" content="{{ .Site.Params.description }}">
-  <meta property="og:image" content="{{ "img/poster-2026.png" | absURL }}">
-  <meta property="og:image:alt" content="Cartell oficial del {{ .Site.Params.festivalName }} 2026">
+  <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Params.festivalName }} — Festival de música en valencià a Gaianes, el Comtat{{ else }}{{ .Title }} · {{ .Site.Params.festivalName }}{{ end }}">
+  <meta property="og:description" content="{{ .Site.Params.descriptionLong }}">
+  <meta property="og:image" content="{{ "img/og-image.jpg" | absURL }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Cartell oficial del Benicafest 2026 — 13 de juny a Gaianes, el Comtat. Entrada gratuïta.">
   <meta property="og:locale" content="ca_ES">
 
   <!-- Twitter / X card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Params.festivalName }} — {{ .Site.Params.date }}{{ else }}{{ .Title }} · {{ .Site.Params.festivalName }}{{ end }}">
-  <meta name="twitter:description" content="{{ .Site.Params.description }}">
-  <meta name="twitter:image" content="{{ "img/poster-2026.png" | absURL }}">
+  <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Params.festivalName }} — Festival de música en valencià a Gaianes, el Comtat{{ else }}{{ .Title }} · {{ .Site.Params.festivalName }}{{ end }}">
+  <meta name="twitter:description" content="{{ .Site.Params.descriptionLong }}">
+  <meta name="twitter:image" content="{{ "img/og-image.jpg" | absURL }}">
 
   <!-- JSON-LD structured data (MusicEvent) -->
   {{ if .IsHome }}
@@ -33,9 +35,10 @@
     "@context": "https://schema.org",
     "@type": "MusicEvent",
     "name": "{{ .Site.Params.festivalName }}",
-    "description": "{{ .Site.Params.description }}",
-    "startDate": "2026-06-13T19:30",
-    "endDate": "2026-06-14T00:00",
+    "description": "{{ .Site.Params.descriptionLong }}",
+    "url": "{{ .Site.BaseURL }}",
+    "startDate": "2026-06-13T19:30:00+02:00",
+    "endDate": "2026-06-13T23:59:00+02:00",
     "eventStatus": "https://schema.org/EventScheduled",
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "isAccessibleForFree": true,
@@ -53,12 +56,12 @@
       "@type": "Organization",
       "name": "{{ .Site.Params.organiser }}"
     },
-    "image": "{{ "img/poster-2026.png" | absURL }}",
-    "url": "{{ .Site.BaseURL }}",
+    "image": "{{ "img/og-image.jpg" | absURL }}",
     "offers": {
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "EUR",
+      "validFrom": "2026-01-01",
       "availability": "https://schema.org/InStock",
       "url": "{{ .Site.BaseURL }}"
     },

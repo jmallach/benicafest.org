@@ -12,6 +12,7 @@ title = "Benicafest"
   freeEntry       = true
   organiser       = "Una associació local de veïns i veïnes de Gaianes, amb el suport de l'Ajuntament"
   description     = "Festival de música en valencià a Gaianes, el Comtat. Entrada gratuïta."
+  descriptionLong = "Benicafest és un festival de música en valencià celebrat a Gaianes, el Comtat. Segona edició el 13 de juny de 2026, amb entrada totalment gratuïta per a tothom."
 
 [markup]
   [markup.goldmark]
