@@ -478,12 +478,14 @@ footer {
 /* ── SPECIAL ACT CARD ── */
 .artist-card--special {
   background:
-    repeating-linear-gradient(
+    linear-gradient(
       -45deg,
-      #000 0px,
-      #000 18px,
-      #fff 18px,
-      #fff 52px
+      #fff 0%,
+      #fff 58%,
+      #000 58%,
+      #000 72%,
+      #fff 72%,
+      #fff 100%
     ) !important;
   color: #000 !important;
   border-top: 4px solid #000;
