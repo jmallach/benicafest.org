@@ -60,9 +60,6 @@
     {{ $artists := where .Site.RegularPages "Section" "lineup" }}
     {{ range sort $artists ".Params.order" }}
     <article class="artist-card{{ if .Params.special }} artist-card--special{{ end }}">
-      {{ if .Params.special }}
-      <div class="special-label">{{ .Params.specialLabel | default "Espectacle especial" }}</div>
-      {{ end }}
       {{ if .Params.avatar }}
       <div class="artist-avatar">
         <img src="{{ .Params.avatar | relURL }}" alt="{{ .Title }}" loading="lazy">
@@ -70,6 +67,9 @@
       {{ end }}
       <div class="time">{{ .Params.time }}</div>
       <h2 class="name">{{ .Title }}</h2>
+      {{ if .Params.special }}
+      <div class="special-label">{{ .Params.specialLabel | default "Espectacle especial" }}</div>
+      {{ end }}
       <div class="genre">{{ .Params.genre }}</div>
       <div class="bio">{{ .Content }}</div>
       {{ if or .Params.website .Params.instagram .Params.bluesky .Params.mastodon .Params.x .Params.tiktok .Params.facebook }}
