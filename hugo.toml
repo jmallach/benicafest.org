@@ -17,3 +17,11 @@ title = "Benicafest"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true   # allow HTML inside markdown if needed
+
+# Sitemap
+[sitemap]
+  changefreq = "weekly"
+  priority   = 0.5
+
+# Enable robots.txt generation
+enableRobotsTXT = true

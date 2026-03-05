@@ -3,14 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary meta -->
   <title>{{ if .IsHome }}{{ .Site.Params.festivalName }} — {{ .Site.Params.date }}{{ else }}{{ .Title }} · {{ .Site.Params.festivalName }}{{ end }}</title>
   <meta name="description" content="{{ .Site.Params.description }}">
-  <meta property="og:title" content="{{ .Site.Params.festivalName }}">
+  <meta name="author" content="{{ .Site.Params.organiser }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ .Site.Params.festivalName }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Params.festivalName }} — {{ .Site.Params.date }}{{ else }}{{ .Title }} · {{ .Site.Params.festivalName }}{{ end }}">
   <meta property="og:description" content="{{ .Site.Params.description }}">
+  <meta property="og:image" content="{{ "img/poster-2026.png" | absURL }}">
+  <meta property="og:image:alt" content="Cartell oficial del {{ .Site.Params.festivalName }} 2026">
+  <meta property="og:locale" content="ca_ES">
+
+  <!-- Twitter / X card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Params.festivalName }} — {{ .Site.Params.date }}{{ else }}{{ .Title }} · {{ .Site.Params.festivalName }}{{ end }}">
+  <meta name="twitter:description" content="{{ .Site.Params.description }}">
+  <meta name="twitter:image" content="{{ "img/poster-2026.png" | absURL }}">
+
+  <!-- JSON-LD structured data (MusicEvent) -->
+  {{ if .IsHome }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicEvent",
+    "name": "{{ .Site.Params.festivalName }}",
+    "description": "{{ .Site.Params.description }}",
+    "startDate": "2026-06-13T19:30",
+    "endDate": "2026-06-14T00:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "isAccessibleForFree": true,
+    "location": {
+      "@type": "Place",
+      "name": "Gaianes",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Gaianes",
+        "addressRegion": "el Comtat, País Valencià",
+        "addressCountry": "ES"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "{{ .Site.Params.organiser }}"
+    },
+    "image": "{{ "img/poster-2026.png" | absURL }}",
+    "url": "{{ .Site.BaseURL }}",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock",
+      "url": "{{ .Site.BaseURL }}"
+    },
+    "performer": [
+      { "@type": "MusicGroup", "name": "Marcel el Marcià" },
+      { "@type": "MusicGroup", "name": "Fardatxo" },
+      { "@type": "MusicGroup", "name": "Invers" },
+      { "@type": "MusicGroup", "name": "The Sgraciats" },
+      { "@type": "MusicGroup", "name": "Arre A.K." },
+      { "@type": "PerformingGroup", "name": "Muixeranga Penyeta Blanca" }
+    ]
+  }
+  </script>
+  {{ end }}
+
+  <!-- Web app manifest -->
+  <link rel="manifest" href="{{ "manifest.json" | relURL }}">
+  <meta name="theme-color" content="#1a1a4a">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+
+  <!-- Favicons -->
   <link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32.png" | relURL }}">
   <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16.png" | relURL }}">

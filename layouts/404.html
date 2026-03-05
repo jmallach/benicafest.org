@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="error-page">
+  <div class="error-mountain">
+    <svg viewBox="0 0 100 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="49,5 15,101 83,101" fill="white"/>
+      <polygon points="49,14 45,24 71,96 78,96" fill="#3d2535"/>
+      <polygon points="72,33 38,101 100,101" fill="white"/>
+      <polygon points="72,40 68,49 88,98 95,98" fill="#3d2535"/>
+    </svg>
+  </div>
+  <h1 class="error-code">404</h1>
+  <p class="error-msg">Aquesta pàgina s'ha perdut entre les muntanyes.</p>
+  <a href="{{ "/" | relURL }}" class="error-back">Torna a l'inici</a>
+</div>
+{{ end }}
