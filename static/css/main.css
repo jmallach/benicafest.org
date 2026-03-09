@@ -123,11 +123,12 @@ nav ul a:focus { opacity: 1; }
   flex-direction: column;
   gap: 0.1em;
 }
-.date-block .day {
+.date-block .block-primary {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(2rem, min(8vw, 11vh), 8rem);
+  font-size: clamp(1.4rem, min(5vw, 7vh), 5rem);
   color: var(--white);
   line-height: 1;
+  letter-spacing: 0.04em;
 }
 .date-block .sub {
   font-family: 'Bebas Neue', sans-serif;
@@ -155,6 +156,13 @@ nav ul a:focus { opacity: 1; }
   font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(1.5rem, min(4vw, 6vh), 4.5rem);
   color: var(--white);
+}
+.ed-logo-svg {
+  width: 100%;
+  height: auto;
+  max-height: clamp(1.5rem, min(4vw, 6vh), 4.5rem);
+  object-fit: contain;
+  object-position: center;
 }
 
 /* Icon blocks */
@@ -591,3 +599,24 @@ html {
   transition: opacity 0.2s;
 }
 .error-back:hover { opacity: 0.85; }
+
+/* ── HERO SVG LOGO ── */
+.festival-logo-svg {
+  height: clamp(3.7rem, min(13.3vw, 17.1vh), 11.1rem);
+  width: auto;
+  max-width: 90%;
+  display: block;
+}
+
+/* ── DATE BLOCK: PROMINENT GAIANES ── */
+.location-name {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  letter-spacing: 0.08em;
+  color: var(--white);
+  line-height: 1;
+  margin-top: 0.15rem;
+  text-transform: uppercase;
+}
+
+

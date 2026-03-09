@@ -4,12 +4,13 @@
 <div class="hero">
 
   <div class="block date-block">
-    <div class="day">13</div>
-    <div class="sub">Juny 2026 · Gaianes</div>
+    <div class="block-primary">Gaianes</div>
+    <div class="sub">13 de juny</div>
+    <div class="sub">2026</div>
   </div>
   <div class="block edition-block">
     <div class="ed-label">{{ .Site.Params.edition }} Edició</div>
-    <div class="ed-num">Benicafest</div>
+    <img src="{{ "img/benicafest-logo-white.svg" | relURL }}" alt="{{ .Site.Params.festivalName }}" class="ed-logo-svg">
   </div>
 
   <div class="block c-orange icon-block" aria-hidden="true">🎸</div>
@@ -18,9 +19,7 @@
   <div class="block c-purple icon-block" aria-hidden="true">⚡</div>
 
   <div class="block title-block">
-    <span class="festival-name">
-      BENIC{{ partial "mountain-a.html" . }}FEST
-    </span>
+    <img src="{{ "img/benicafest-logo-white.svg" | relURL }}" alt="Benicafest" class="festival-logo-svg">
   </div>
 
   <div class="block c-olive   row4 icon-block" aria-hidden="true">🎹</div>
