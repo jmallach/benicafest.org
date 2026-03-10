@@ -11,7 +11,7 @@ instagram: "https://www.instagram.com/muixerangapenyetablanca/"
 x: "https://x.com/PenyetaBlanca"
 bluesky: ""
 mastodon: ""
-tiktok: ""
+tiktok: "https://www.tiktok.com/@penyetablanca"
 facebook: ""
 ---
 

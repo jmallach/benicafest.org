@@ -9,7 +9,7 @@ instagram: "https://www.instagram.com/inversgrup/"
 x: "https://x.com/inversgrup"
 bluesky: ""
 mastodon: ""
-tiktok: ""
+tiktok: "https://www.tiktok.com/@invers.grup"
 bandcamp: "https://inversgrup.bandcamp.com"
 facebook: ""
 ---
