@@ -8,9 +8,9 @@ title = "Benicafest"
   date            = "13 de juny de 2026"
   doors           = "19:30"
   concertStart    = "20:00"
-  location        = "Gaianes, el Comtat"
+  location        = "Gaianes (el Comtat), País Valencià"
   freeEntry       = true
-  organiser       = "Una associació local de veïns i veïnes de Gaianes, amb el suport de l'Ajuntament"
+  organiser       = "L'Associació Cultural “El Castellet”, amb el suport de l'Ajuntament de Gaianes"
   description     = "Festival de música en valencià a Gaianes, el Comtat. Entrada gratuïta."
   descriptionLong = "Benicafest és un festival de música en valencià celebrat a Gaianes, el Comtat. Segona edició el 13 de juny de 2026, amb entrada totalment gratuïta per a tothom."
 

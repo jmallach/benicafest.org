@@ -1,10 +1,7 @@
 <footer>
-  <div>
-    <div class="foot-logo">
-      {{ partial "mountain-a-small.html" . }}
-      <span class="foot-name">{{ .Site.Params.festivalName }}</span>
-    </div>
-    <p class="foot-org">{{ .Site.Params.organiser }}</p>
+  <div class="foot-logo">
+    {{ partial "mountain-a-small.html" . }}
+    <span class="foot-name">{{ .Site.Params.festivalName }}</span>
   </div>
   <p class="copy">© {{ now.Year }} {{ .Site.Params.festivalName }} · Gaianes</p>
 </footer>

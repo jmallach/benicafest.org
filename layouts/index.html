@@ -54,7 +54,7 @@
 
 <!-- ═══ LINEUP ═══ -->
 <section class="section" id="lineup">
-  <span class="section-label">Lineup</span>
+  <span class="section-label">Grups participants</span>
   <div class="lineup-grid">
     {{ $artists := where .Site.RegularPages "Section" "lineup" }}
     {{ range sort $artists ".Params.order" }}
@@ -105,7 +105,7 @@
 
 <!-- ═══ FREE ENTRY ═══ -->
 <div class="free-band">
-  <h2>Entrada totalment gratuïta 🎉</h2>
+  <h2>Entrada gratuïta 🎉</h2>
   <p>El Benicafest és per a tothom. Vine i gaudeix!</p>
 </div>
 
@@ -119,7 +119,7 @@
       <p>{{ .Site.Params.location }}</p>
       <a href="geo:38.814171,-0.407776" 
          onclick="if(this.href.startsWith('geo:')&&!navigator.userAgent.match(/Android|iPhone|iPad/i)){this.href='https://www.openstreetmap.org/?mlat=38.814171&mlon=-0.407776&zoom=17';}"
-         class="map-link" aria-label="Obri el mapa de la ubicació">
+         class="map-link" aria-label="Obri el mapa de la ubicació" target="_blank" rel="noopener">
         <img src="{{ "img/map-gaianes.jpg" | relURL }}" alt="Mapa de la pista esportiva de Gaianes" class="map-img">
         <span class="map-cta">Obri el mapa →</span>
       </a>
@@ -132,7 +132,7 @@
     <div class="info-card">
       <div class="info-icon">🍔</div>
       <h3>Menjar i beure</h3>
-      <p>Food trucks, barra de bar i els bars locals del poble, oberts durant tot l'esdeveniment.</p>
+      <p>Hi haurà servei de barra al concert, menjar cassolà del <a href="https://www.porcodiavolo.com/ca/" target="_blank" rel="noopener">Porco Diàvolo</a>, i els bars locals del poble estaran oberts durant tot el festival.</p>
     </div>
     <div class="info-card">
       <div class="info-icon">🏘️</div>
