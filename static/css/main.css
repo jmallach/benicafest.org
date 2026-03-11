@@ -620,3 +620,30 @@ html {
 }
 
 
+
+/* ── MAP CARD ── */
+.info-card--map { padding-bottom: 1.8rem; }
+.map-link {
+  display: block;
+  margin-top: 1rem;
+  position: relative;
+  text-decoration: none;
+}
+.map-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.2s;
+}
+.map-link:hover .map-img { opacity: 0.85; }
+.map-cta {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.55));
+  color: white;
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  padding: 1.5rem 1rem 0.7rem;
+  text-align: center;
+}

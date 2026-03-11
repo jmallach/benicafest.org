@@ -113,10 +113,16 @@
 <section class="section" id="info">
   <span class="section-label">Informació</span>
   <div class="info-grid">
-    <div class="info-card">
+    <div class="info-card info-card--map">
       <div class="info-icon">📍</div>
       <h3>Ubicació</h3>
       <p>{{ .Site.Params.location }}</p>
+      <a href="geo:38.814171,-0.407776" 
+         onclick="if(this.href.startsWith('geo:')&&!navigator.userAgent.match(/Android|iPhone|iPad/i)){this.href='https://www.openstreetmap.org/?mlat=38.814171&mlon=-0.407776&zoom=17';}"
+         class="map-link" aria-label="Obri el mapa de la ubicació">
+        <img src="{{ "img/map-gaianes.jpg" | relURL }}" alt="Mapa de la pista esportiva de Gaianes" class="map-img">
+        <span class="map-cta">Obri el mapa →</span>
+      </a>
     </div>
     <div class="info-card">
       <div class="info-icon">📅</div>
