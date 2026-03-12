@@ -13,4 +13,4 @@ tiktok: ""
 facebook: ""
 ---
 
-Ràpids, terrenals i amb molta personalitat — com el llangardaix que dóna nom al grup. Fardatxo porta una energia de directe autèntica i arrelada a la terra valenciana.
+Una banda de Ska Punk directe i en valencià, integrada per saforauis molt joves amb una maduresa sobre l'escenari que sorprèn i no deixa indiferent a ningú. 🦎 Fardatxo demostren que l'escena valenciana té molt futur per davant.

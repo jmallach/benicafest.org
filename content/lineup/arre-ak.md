@@ -14,4 +14,4 @@ bandcamp: "https://arreak.bandcamp.com"
 facebook: ""
 ---
 
-Ska Punk Rural de l'Horta. Arre A.K. combinen l'energia desbordant del punk i el ska amb lletres en valencià que parlen de la vida i la terra. Han presentat el seu primer EP en directes a la sala 16 Toneladas de València, i no paren.
+Ska Punk Rural nascut al Centre Social Okupat de l'Horta, a Benimaclet. Arre A.K. combinen l'energia del punk i el ska amb lletres en valencià: divertides i irreverents per fora, però amb un missatge social i reivindicatiu ben clar per dins.

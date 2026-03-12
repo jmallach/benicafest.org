@@ -14,4 +14,4 @@ bandcamp: "https://marcelelmarcia.bandcamp.com"
 facebook: "https://www.facebook.com/marcelmarcianet.iocla"
 ---
 
-Marcel el Marcià és una de les propostes musicals més consolidades del panorama valencià per a públic familiar. El seu espectacle explica la història d'un xiquet vingut d'un planeta llunyà amb la missió de recuperar i transmetre la tradició musical valenciana als més menuts. Cançons en valencià plenes d'energia, dansa i imaginació — per als menuts i per als grans. Amb diversos discos publicats, entre ells *Patxamare* (2022) i *Música infantil tradicional en valencià* (2023).
+Una de les propostes musicals més consolidades del panorama valencià per a totes les edats. Provinents d'Alcoi i Alberic, Marcel el Marcià porta cançons tradicionals i pròpies en valencià plenes d'energia i imaginació, amb múltiples discos i premis que avalen un espectacle per als menuts i per als grans.

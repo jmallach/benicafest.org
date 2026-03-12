@@ -13,4 +13,4 @@ tiktok: ""
 facebook: ""
 ---
 
-Descarats i amb molt bon humor sobre l'escenari. Una proposta fresca i directa que no deixarà ningú assegut.
+La banda del Comtat al Benicafest. The Sgraciats mesclen temes propis amb versions de clàssics del punk, amb una posada en escena directa i descarada liderada per una veu femenina que ho peta.

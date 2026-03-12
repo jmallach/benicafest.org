@@ -15,4 +15,4 @@ tiktok: "https://www.tiktok.com/@penyetablanca"
 facebook: ""
 ---
 
-La Muixeranga Penyeta Blanca és la colla muixeranguera de Cocentaina, nascuda al voltant de l'IES Pare Arques i formada per persones del Comtat i l'Alcoià. Fan pinya, s'enfaixen i alcen figures humanes que toquen el cel. Una tradició valenciana ancestral feta de coratge, confiança i comunitat — el complement perfecte per a un Benicafest que celebra la cultura del territori.
+La Muixeranga Penyeta Blanca, fundada el 2007, és la colla muixeranguera de Cocentaina. Una expressió de cultura popular ancestral feta de suport mutu, coratge i pinya, que està present tot l'any en festes locals i esdeveniments de tota mena.
