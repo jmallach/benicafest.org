@@ -1,8 +1,8 @@
 ---
 title: "Muixeranga Penyeta Blanca"
 genre: "Muixeranga · Tradició valenciana"
-time: "TBC"
-order: 15
+time: "21:00"
+order: 2
 special: true
 specialLabel: "Espectacle especial"
 avatar: "img/avatars/muixeranga-penyeta-blanca.jpg"
