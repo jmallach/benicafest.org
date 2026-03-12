@@ -1,6 +1,6 @@
 ---
 title: "Marcel el Marcià"
-genre: "Cançó en valencià · Familiar"
+genre: "Música familiar en valencià"
 time: "20:00"
 order: 1
 avatar: "img/avatars/marcel-el-marcia.jpg"

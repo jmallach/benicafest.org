@@ -1,6 +1,6 @@
 ---
 title: "The Sgraciats"
-genre: "Rock · Indie"
+genre: "Punk Rock · En valencià"
 time: "TBC"
 order: 4
 avatar: "img/avatars/the-sgraciats.jpg"

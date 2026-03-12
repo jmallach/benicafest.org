@@ -14,4 +14,4 @@ bandcamp: "https://inversgrup.bandcamp.com"
 facebook: ""
 ---
 
-Fundats el 2017 a Beniflà (la Safor), Invers combinen guitarres potents, violí i lletres combatives en valencià sobre identitat, igualtat i llibertat. Guanyadors del Concurs La Veu Jove de Gandia 2025, una de les propostes emergents més sòlides de l'escena valenciana.
+Fundats el 2017 a Beniflà (la Safor), Invers combinen guitarres potents, violí i lletres combatives en valencià sobre identitat, igualtat i llibertat. Guanyadores del Concurs La Veu Jove de Gandia 2025, una de les propostes emergents més sòlides de l'escena valenciana.

@@ -15,4 +15,4 @@ tiktok: "https://www.tiktok.com/@penyetablanca"
 facebook: ""
 ---
 
-La Muixeranga Penyeta Blanca, fundada el 2007, és la colla muixeranguera de Cocentaina. Una expressió de cultura popular ancestral feta de suport mutu, coratge i pinya, que està present tot l'any en festes locals i esdeveniments de tota mena.
+La Muixeranga Penyeta Blanca, fundada el 2017, és la colla muixeranguera de Cocentaina. Una expressió de cultura popular ancestral feta de suport mutu, coratge i pinya, que està present tot l'any en festes locals i esdeveniments de tota mena.
