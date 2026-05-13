@@ -2,7 +2,7 @@
 title: "Arre A.K."
 genre: "Ska Punk Rural · En valencià"
 time: "TBC"
-order: 6
+order: 3
 avatar: "img/avatars/arre-ak.jpg"
 website: ""
 instagram: "https://www.instagram.com/arre_ak/"

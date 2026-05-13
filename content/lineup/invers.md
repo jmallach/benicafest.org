@@ -2,7 +2,7 @@
 title: "Invers"
 genre: "Rock-metal alternatiu · En valencià"
 time: "TBC"
-order: 4
+order: 5
 avatar: "img/avatars/invers.jpg"
 website: ""
 instagram: "https://www.instagram.com/inversgrup/"

@@ -277,11 +277,12 @@ nav ul a:focus { opacity: 1; }
 .artist-card:hover { transform: translateY(-5px); }
 
 /* Cycle through poster colours */
-.artist-card:nth-child(5n+1) { background: var(--orange); color: var(--white); }
-.artist-card:nth-child(5n+2) { background: var(--red-dk); color: var(--white); }
-.artist-card:nth-child(5n+3) { background: var(--purple); color: var(--white); }
-.artist-card:nth-child(5n+4) { background: var(--navy);   color: var(--white); }
-.artist-card:nth-child(5n+0) { background: var(--olive);  color: var(--white); }
+.artist-card:nth-child(6n+1) { background: var(--orange);   color: var(--white); }
+.artist-card:nth-child(6n+2) { background: var(--red-dk);   color: var(--white); }
+.artist-card:nth-child(6n+3) { background: var(--purple);   color: var(--white); }
+.artist-card:nth-child(6n+4) { background: var(--navy);     color: var(--white); }
+.artist-card:nth-child(6n+5) { background: var(--olive);    color: var(--white); }
+.artist-card:nth-child(6n+0) { background: var(--lavender); color: var(--navy);  }
 
 .artist-card .time {
   font-size: 0.65rem;
@@ -695,3 +696,4 @@ html {
   opacity: 1;
   text-align: center;
 }
+
