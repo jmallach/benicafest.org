@@ -3,6 +3,7 @@ title: "Per anunciar"
 genre: "A confirmar"
 time: "TBC"
 order: 4
+placeholder: true
 avatar: ""
 website: ""
 instagram: ""

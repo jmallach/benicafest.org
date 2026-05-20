@@ -66,12 +66,12 @@
       "url": "{{ .Site.BaseURL }}"
     },
     "performer": [
-      { "@type": "MusicGroup", "name": "Marcel el Marcià" },
-      { "@type": "MusicGroup", "name": "Fardatxo" },
-      { "@type": "MusicGroup", "name": "Invers" },
-      { "@type": "MusicGroup", "name": "The Sgraciats" },
-      { "@type": "MusicGroup", "name": "Arre A.K." },
-      { "@type": "PerformingGroup", "name": "Muixeranga Penyeta Blanca" }
+      {{- $all := where .Site.RegularPages "Section" "lineup" -}}
+      {{- $active := where (where $all ".Params.cancelled" "ne" true) ".Params.placeholder" "ne" true -}}
+      {{- range $i, $a := sort $active ".Params.order" -}}
+      {{- if $i }},{{ end }}
+      { "@type": "{{ if $a.Params.special }}PerformingGroup{{ else }}MusicGroup{{ end }}", "name": "{{ $a.Title }}" }
+      {{- end }}
     ]
   }
   </script>

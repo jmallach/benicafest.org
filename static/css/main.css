@@ -4,6 +4,7 @@
    ═══════════════════════════════════════ */
 
 :root {
+  --font-display: 'Bebas Neue', sans-serif;
   --olive:     #8a8a2a;
   --olive-dk:  #5a5a18;
   --orange:    #e85a1a;
