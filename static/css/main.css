@@ -486,6 +486,65 @@ footer {
   display: block;
 }
 
+/* ── CANCELLED CARD ── */
+.artist-card--cancelled {
+  background: #666 !important;
+  color: rgba(255,255,255,0.8) !important;
+  position: relative;
+}
+.artist-card--cancelled > * {
+  position: relative;
+  z-index: 1;
+  opacity: 0.45;
+}
+.artist-card--cancelled::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    -45deg,
+    transparent 0%,
+    transparent 40%,
+    rgba(169,50,38,0.92) 40%,
+    rgba(169,50,38,0.92) 60%,
+    transparent 60%,
+    transparent 100%
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+.artist-card--cancelled::after {
+  content: 'CANCEL·LAT';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.25em;
+  color: rgba(255,255,255,0.95);
+  text-shadow: 0 1px 6px rgba(0,0,0,0.6);
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 3;
+}
+.artist-card--cancelled .name {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+.cancelled-badge {
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.8;
+  border: 1.5px solid rgba(180,30,20,0.7);
+  display: inline-block;
+  padding: 0.15rem 0.4rem;
+  margin-bottom: 0.5rem;
+  background: rgba(192,57,43,0.75);
+  color: #fff;
+}
+
 /* ── SPECIAL ACT CARD ── */
 .artist-card--special {
   background:

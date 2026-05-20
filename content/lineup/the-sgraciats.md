@@ -2,7 +2,7 @@
 title: "The Sgraciats"
 genre: "Punk Rock · En valencià"
 time: "TBC"
-order: 4
+order: 5
 avatar: "img/avatars/the-sgraciats.jpg"
 website: ""
 instagram: "https://www.instagram.com/the_sgraciats/"

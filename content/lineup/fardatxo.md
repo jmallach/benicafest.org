@@ -2,7 +2,7 @@
 title: "Fardatxo"
 genre: "Rock · En valencià"
 time: "TBC"
-order: 6
+order: 7
 avatar: "img/avatars/fardatxo.jpg"
 website: ""
 instagram: "https://www.instagram.com/fardatxo.oficial/"

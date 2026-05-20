@@ -58,7 +58,7 @@
   <div class="lineup-grid">
     {{ $artists := where .Site.RegularPages "Section" "lineup" }}
     {{ range sort $artists ".Params.order" }}
-    <article class="artist-card{{ if .Params.special }} artist-card--special{{ end }}">
+    <article class="artist-card{{ if .Params.special }} artist-card--special{{ end }}{{ if .Params.cancelled }} artist-card--cancelled{{ end }}">
       {{ if .Params.avatar }}
       <div class="artist-avatar">
         <img src="{{ .Params.avatar | relURL }}" alt="{{ .Title }}" loading="lazy">
@@ -66,6 +66,9 @@
       {{ end }}
       <div class="time">{{ .Params.time }}</div>
       <h2 class="name">{{ .Title }}</h2>
+      {{ if .Params.cancelled }}
+      <div class="cancelled-badge">Cancel·lat</div>
+      {{ end }}
       {{ if .Params.special }}
       <div class="special-label">{{ .Params.specialLabel | default "Espectacle especial" }}</div>
       {{ end }}
@@ -93,10 +96,12 @@
     </div>
     {{ $artists := where .Site.RegularPages "Section" "lineup" }}
     {{ range sort $artists ".Params.order" }}
+    {{ if not .Params.cancelled }}
     <div class="s-row">
       <span class="s-time">{{ .Params.time }}</span>
       <span class="s-name">{{ .Title }}</span>
     </div>
+    {{ end }}
     {{ end }}
   </div>
   <p class="disclaimer">* Horaris definitius pròximament</p>
@@ -132,7 +137,7 @@
     <div class="info-card">
       <div class="info-icon">🍔</div>
       <h3>Menjar i beure</h3>
-      <p>Hi haurà servei de barra al concert, menjar cassolà del <a href="https://www.porcodiavolo.com/ca/" target="_blank" rel="noopener">Porco Diàvolo</a>, i els bars locals del poble estaran oberts durant tot el festival.</p>
+      <p>Hi haurà servei de barra al concert, menjar del food truck <a href="https://www.instagram.com/thesmashville_" target="_blank" rel="noopener">The Smashville</a>, i els bars locals del poble estaran oberts durant tot el festival.</p>
     </div>
     <div class="info-card">
       <div class="info-icon">🏘️</div>
