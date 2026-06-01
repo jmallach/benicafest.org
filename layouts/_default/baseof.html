@@ -70,7 +70,7 @@
       {{- $active := where (where $all ".Params.cancelled" "ne" true) ".Params.placeholder" "ne" true -}}
       {{- range $i, $a := sort $active ".Params.order" -}}
       {{- if $i }},{{ end }}
-      { "@type": "{{ if $a.Params.special }}PerformingGroup{{ else }}MusicGroup{{ end }}", "name": "{{ $a.Title }}" }
+      { "@type": "{{ if $a.Params.performingGroup }}PerformingGroup{{ else }}MusicGroup{{ end }}", "name": "{{ $a.Title }}" }
       {{- end }}
     ]
   }

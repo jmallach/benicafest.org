@@ -4,9 +4,10 @@ genre: "Muixeranga · Tradició valenciana"
 time: "21:00"
 order: 2
 special: true
+performingGroup: true
 specialLabel: "Espectacle especial"
 avatar: "img/avatars/muixeranga-penyeta-blanca.jpg"
-website: ""
+website: "https://penyetablanca.org/"
 instagram: "https://www.instagram.com/muixerangapenyetablanca/"
 x: "https://x.com/PenyetaBlanca"
 bluesky: ""

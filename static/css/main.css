@@ -322,7 +322,7 @@ nav ul a:focus { opacity: 1; }
   text-decoration: underline;
   text-underline-offset: 2px;
 }
-.social-web svg { width: 0.95rem; height: 0.95rem; }
+.social-web svg { width: 1.3rem; height: 1.3rem; }
 
 /* Screen-reader only text for icon-only links */
 .sr-only {
