@@ -363,6 +363,8 @@ nav ul a:focus { opacity: 1; }
 }
 .s-doors .s-time  { color: var(--olive-dk); }
 .s-doors .s-name  { font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 500; opacity: 0.65; }
+.s-pre .s-time    { color: var(--olive-dk); }
+.s-pre .s-name    { font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 500; opacity: 0.65; }
 
 /* ── INFO GRID ── */
 .info-grid {
