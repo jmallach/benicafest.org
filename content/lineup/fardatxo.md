@@ -2,7 +2,7 @@
 title: "Fardatxo"
 genre: "Rock · En valencià"
 time: "TBC"
-order: 7
+order: 10
 cancelled: true
 avatar: "img/avatars/fardatxo.jpg"
 website: ""

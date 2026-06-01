@@ -2,7 +2,7 @@
 title: "Arre A.K."
 genre: "Ska Punk Rural · En valencià"
 time: "TBC"
-order: 3
+order: 9
 cancelled: true
 avatar: "img/avatars/arre-ak.jpg"
 website: ""
