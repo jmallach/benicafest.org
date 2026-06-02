@@ -360,6 +360,8 @@ nav ul a:focus { opacity: 1; }
   font-family: 'Bebas Neue', sans-serif;
   font-size: 1.4rem;
   letter-spacing: 0.04em;
+  flex: 1;
+  min-width: 0;
 }
 .s-doors .s-time  { color: var(--olive-dk); }
 .s-doors .s-name  { font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 500; opacity: 0.65; }
