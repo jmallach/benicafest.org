@@ -99,8 +99,9 @@
   <link rel="apple-touch-icon" sizes="180x180" href="{{ "favicon-180.png" | relURL }}">
 </head>
 <body>
+  <a href="#main-content" class="skip-to-content">Salta al contingut</a>
   {{ partial "nav.html" . }}
-  <main>
+  <main id="main-content">
     {{ block "main" . }}{{ end }}
   </main>
   {{ partial "footer.html" . }}

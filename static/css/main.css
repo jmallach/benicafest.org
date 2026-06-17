@@ -20,6 +20,22 @@
   --off-white: #f5f0e8;
 }
 
+/* ── SKIP TO CONTENT ── */
+.skip-to-content {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  background: var(--navy);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  z-index: 200;
+  transition: top 0.2s;
+}
+.skip-to-content:focus { top: 1rem; }
+
 /* ── RESET & BASE ── */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
