@@ -109,7 +109,7 @@
     {{ range sort $artists ".Params.order" }}
     {{ if not .Params.cancelled }}
     <div class="s-row">
-      <span class="s-time">{{ .Params.time }}</span>
+      <span class="s-time">{{ if eq .Params.time "TBC" }}—{{ else }}{{ .Params.time }}{{ end }}</span>
       <span class="s-name">{{ .Title }}</span>
     </div>
     {{ end }}
