@@ -1,7 +1,7 @@
 ---
 title: "Lineup"
 cascade:
-  _build:
+  build:
     render: "never"
     list: "local"
 ---
