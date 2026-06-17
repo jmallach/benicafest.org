@@ -49,11 +49,13 @@
     src="{{ "img/poster-2026.png" | relURL }}"
     alt="Cartell oficial del Benicafest 2026"
     class="poster-img"
+    loading="lazy"
   >
   <img
     src="{{ "img/poster-2026-lineup.png" | relURL }}"
     alt="Cartell del Benicafest 2026 amb el lineup"
     class="poster-img"
+    loading="lazy"
   >
 </div>
 
@@ -66,7 +68,7 @@
     <article class="artist-card{{ if .Params.special }} artist-card--special{{ end }}{{ if .Params.cancelled }} artist-card--cancelled{{ end }}">
       {{ if .Params.avatar }}
       <div class="artist-avatar">
-        <img src="{{ .Params.avatar | relURL }}" alt="{{ .Title }}" loading="lazy">
+        <img src="{{ .Params.avatar | relURL }}" alt="{{ .Title }}" loading="lazy" width="72" height="72">
       </div>
       {{ end }}
       <div class="time">{{ .Params.time }}</div>
