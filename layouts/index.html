@@ -45,18 +45,14 @@
 
 <!-- ═══ POSTER ═══ -->
 <div class="poster-section">
-  <img
-    src="{{ "img/poster-2026.png" | relURL }}"
-    alt="Cartell oficial del Benicafest 2026"
-    class="poster-img"
-    loading="lazy"
-  >
-  <img
-    src="{{ "img/poster-2026-lineup.png" | relURL }}"
-    alt="Cartell del Benicafest 2026 amb el lineup"
-    class="poster-img"
-    loading="lazy"
-  >
+  <picture>
+    <source srcset="{{ "img/poster-2026.webp" | relURL }}" type="image/webp">
+    <img src="{{ "img/poster-2026.png" | relURL }}" alt="Cartell oficial del Benicafest 2026" class="poster-img" loading="lazy">
+  </picture>
+  <picture>
+    <source srcset="{{ "img/poster-2026-lineup.webp" | relURL }}" type="image/webp">
+    <img src="{{ "img/poster-2026-lineup.png" | relURL }}" alt="Cartell del Benicafest 2026 amb el lineup" class="poster-img" loading="lazy">
+  </picture>
 </div>
 
 <!-- ═══ LINEUP ═══ -->
@@ -68,7 +64,10 @@
     <article class="artist-card{{ if .Params.special }} artist-card--special{{ end }}{{ if .Params.cancelled }} artist-card--cancelled{{ end }}">
       {{ if .Params.avatar }}
       <div class="artist-avatar">
-        <img src="{{ .Params.avatar | relURL }}" alt="{{ .Title }}" loading="lazy" width="72" height="72">
+        <picture>
+          <source srcset="{{ .Params.avatar | replaceRE `\.(jpg|jpeg|png)$` `.webp` | relURL }}" type="image/webp">
+          <img src="{{ .Params.avatar | relURL }}" alt="{{ .Title }}" loading="lazy" width="72" height="72">
+        </picture>
       </div>
       {{ end }}
       <div class="time">{{ .Params.time }}</div>
@@ -136,7 +135,10 @@
       <a href="geo:38.814171,-0.407776" 
          onclick="if(this.href.startsWith('geo:')&&!navigator.userAgent.match(/Android|iPhone|iPad/i)){this.href='https://www.openstreetmap.org/?mlat=38.814171&mlon=-0.407776&zoom=17';}"
          class="map-link" aria-label="Obri el mapa de la ubicació" target="_blank" rel="noopener noreferrer">
-        <img src="{{ "img/map-gaianes.jpg" | relURL }}" alt="Mapa de la pista esportiva de Gaianes" class="map-img">
+        <picture>
+          <source srcset="{{ "img/map-gaianes.webp" | relURL }}" type="image/webp">
+          <img src="{{ "img/map-gaianes.jpg" | relURL }}" alt="Mapa de la pista esportiva de Gaianes" class="map-img">
+        </picture>
         <span class="map-cta">Obri el mapa →</span>
       </a>
     </div>
