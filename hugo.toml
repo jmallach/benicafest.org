@@ -26,3 +26,6 @@ title = "Benicafest"
 
 # Enable robots.txt generation
 enableRobotsTXT = true
+
+# Disable empty auto-generated pages
+disableKinds = ["taxonomy", "term", "section", "RSS"]
